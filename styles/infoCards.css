@@ -1,0 +1,205 @@
+.infoboxTitel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.infoboxTitel div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.infoboxTitel p:first-child {
+  font-family: "EB Garamond", serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.infoboxTitel p:last-child {
+  font-family: "EB Garamond", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Card {
+  background-color: #e2e2e2;
+}
+
+.CardDate {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: fit-content;
+  font-family: "Garamond", serif;
+  font-weight: 700;
+  color: rgb(76 76 76);
+}
+
+.CardDate div:first-child {
+  font-size: 64px;
+}
+
+.CardDate div:last-child{
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.CardImg img {
+  width: 320px;
+  height: 240px;
+  border-radius: 12px;
+}
+
+.CardInfoText p:first-child {
+  font-family: "Garamond", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44.8px;
+}
+
+.CardInfoText p:last-child {
+  padding-bottom: 40px;
+  padding-top: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #4c4c4c;
+}
+
+.Cardinfo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.Cardinfo div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.Cardinfo div p {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #4c4c4c;
+}
+
+.poster button {
+  cursor: pointer;
+  border: none;
+  background-color: #05B093;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 16px;
+  width: 175px;
+  height: 51px;
+}
+
+.Card {
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.CardAllInfo {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contendCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.CardFirstBox {
+  display: flex;
+  align-items: center;
+  gap: 62px;
+}
+
+.contentCardBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 1250px) {
+  .contendCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .Card {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 50px;
+  }
+
+  .CardFirstBox {
+    gap: 25px;
+  }
+
+  .contentCardBox {
+    width: 700px;
+    margin: auto;
+  }
+
+  
+}
+
+@media (max-width: 590px) {
+  .infoboxTitel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contendCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .CardDate div:first-child {
+    font-size: 50px;
+    
+  }
+
+  .CardFirstBox {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .CardFirstBox img {
+    width: fit-content;
+  }
+
+  .CardImg {
+    object-fit: cover;
+    width: max-content;
+  }
+
+  .CardAllInfo {
+    width: 400px;
+  }
+}

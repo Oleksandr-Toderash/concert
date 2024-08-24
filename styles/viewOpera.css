@@ -1,0 +1,60 @@
+.sectionOpera {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 184px;
+}
+
+.bannerOpera img {
+  width: 856px;
+  height: 497px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.sectionOperaCard {
+  border-radius: 8px;
+  background-color: #e2e2e2;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.sectionOperaCard img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin: 12px 0px 12px 16px;
+}
+
+.sectionOperaCard:hover {
+  box-shadow: 0px 5px 8px rgb(216, 216, 216);
+}
+
+.sectionOperaCard p {
+  font-size: 16px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  padding-right: 16px;
+}
+
+@media (max-width: 1310px) {
+  .sectionOpera {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionOperaCard {
+    width: 350px;
+  }
+
+  .sectionOperaBlock {
+    width: 1150px;
+  }
+  .bannerOpera img {
+    width: 100%;
+  }
+
+
+}
