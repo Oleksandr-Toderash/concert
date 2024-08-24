@@ -1,4 +1,4 @@
-function changePhotos() {
+export function changePhotos() {
   const mainImg = document.querySelector('#main-img');
   const viewButtons = document.querySelectorAll('#view-button');
 
@@ -11,4 +11,3 @@ function changePhotos() {
   });
 }
 
-changePhotos()
