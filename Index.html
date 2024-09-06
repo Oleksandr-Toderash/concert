@@ -26,33 +26,31 @@
           <p class="headerLogoText">SITE OF CONCERT - EXCURSION PROGRAMS</p>
         </div>
         <nav class="headerTools">
-          <a href="#">Poster</a>
+          <a id="poster" href="#">Poster</a>
           <div class="headerMainSquare"> </div>
-          <a href="#">Order tickets</a>
+          <a id="news" href="#">News</a>
           <div class="headerMainSquare"> </div>
-          <a href="#">Сontacts</a>
+          <a id="brief" href="#">Brief section</a>
           <div class="headerMainSquare"> </div>
-          <a href="#">History of the palace</a>
+          <a id="contacts" href="#">Contacts</a>
           <div class="headerMainSquare"> </div>
-          <a href="#">Gallary</a>
-          <div class="headerMainSquare"> </div>
-          <a href="#">Hall plans</a>
+          <a id="events" href="#">Events</a>
         </nav>
     </div>
   </header>
   <main>
     <section class="sectionOpera restrictions1">
       <div id="main-img" class="bannerOpera">
-        <img id="img-scene-1" src="/images/img-opera-scene-2.jfif" alt="#">
+        <img id="img-scene-1" src="./images/img-opera-scene-blue.jfif" alt="#">
       </div>
       <div class="sectionOperaBlock">
         <div id="view-button" class="sectionOperaCard">
-          <img id="img-scene-2" src="/images/img-opera-scene-1.jfif" alt="#">
+          <img id="img-scene-2" src="./images/img-opera-scene-red.jfif" alt="#">
           <p>Opera VS Operetta</p>
         </div>
 
         <div id="view-button" class="sectionOperaCard">
-          <img id="img-seats" src="/images/img-opera-seats.jfif" alt="#">
+          <img id="img-seats" src="./images/img-opera-seats.jfif" alt="#">
           <p>Antonio Vivaldi. Season</p>
         </div>
       </div>
@@ -60,7 +58,7 @@
     <section class="poster restrictions1">
 <div class="contentPoster">
       <div class="infoboxTitel">
-        <p>Poster</p>
+        <p id="poster-section">Poster</p>
         <div>
           <i class="fa-solid fa-calendar-days" style="color: #05b093; font-size: 40px;"></i>
           <p>All events</p>
@@ -75,7 +73,7 @@
         </div>
 
         <div class="CardImg">
-          <img src="/images/img-opera-scene-2.jfif" alt="Photo">
+          <img src="./images/img-opera-seats.jfif" alt="Photo">
         </div>
       </div>
       <div class="CardSeсondBox">
@@ -116,7 +114,7 @@
           </div>
 
           <div class="CardImg">
-            <img src="/images/img-opera-scene-1.jfif" alt="Photo">
+            <img src="./images/img-opera-scene-red.jfif" alt="Photo">
           </div>
         </div>
 
@@ -142,10 +140,10 @@
     </section>
     <section class="newsCalendar restrictions2">
       <div class="newsContent">
-        <p class="NewsTitelText">News</p>
+        <p id="news-section" class="NewsTitelText">News</p>
         <div class="minipage">
           <div class="minipageBox">
-              <img src="images/img-people.jfif" alt="Photo">
+              <img src="./images/img-people.jfif" alt="Photo">
             <div class="minipageText">
               <p>Postponements/Cancellations of Events</p>
               <p>04/11/2023 at 19.00 o'clock. - concert
@@ -155,7 +153,7 @@
           </div>
 
           <div class="minipageBox">
-            <img src="/images/img-dragon.jfif" alt="Photo">
+            <img src="./images/img-dragon.jfif" alt="Photo">
             <div class="minipageText">
               <p>Postponements/Cancellations of Events</p>
               <p>04/11/2023 at 19.00 o'clock. - concert
@@ -169,7 +167,7 @@
 
       <div class="calendar">
         <div class="calendarPreview">
-          <img src="/images/img-library.jfif" alt="Photo">
+          <img src="./images/img-library.jfif" alt="Photo">
           <div class="calendarPreviewText">Sightseeing tours</div>
         </div>
         <div class="calendarBottom">
@@ -232,7 +230,7 @@
     </section>
     <section class="shortsAnonses restrictions1">
       <div class="anonsesText">
-        <p class="shortsText">Brief announcements</p>
+        <p id="brief-section" class="shortsText">Brief announcements</p>
         <div>
           <i class="fa-solid fa-calendar-days" style="color: #05b093; font-size: 40px;"></i>
           <p>All events</p>
@@ -285,7 +283,7 @@
       </div>
       <div class="footerBox">
         <div>
-          <p class="footerTitelBox">Events</p>
+          <p id="events-section" class="footerTitelBox">Events</p>
           <div>
             <p>Excursions</p>
             <p>Concerts</p>
@@ -293,7 +291,7 @@
           </div>
         </div>
         <div>
-          <p class="footerTitelBox">Contacts</p>
+          <p id="contacts-section" class="footerTitelBox">Contacts</p>
           <div>
             <p>St. Petersburg, Nevsky Prospect, 1</p>
             <p>text@mail. de</p>
@@ -305,5 +303,6 @@
   </footer>
 
   <script type='module' src="js/general.js"></script>
+  <script src="js/navbar.js"></script>
 </body>
 </html>
