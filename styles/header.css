@@ -72,12 +72,12 @@ nav a:hover {
   }
 }
 
-@media (max-width: 825px) {
+@media (max-width: 580px) {
   header {
     padding: 42px 0px;
   }
   nav {
-    gap: 5px;
+    gap: 12px;
     transition: 0.5s;
   }
 
