@@ -2,19 +2,37 @@ const newsCards = [
   {
     imgUrl: './images/img-people.jfif',
     title: 'Postponements/Cancellations of Events',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident omnis minima fugit velit totam ad'
+    description: '03/09/2023 at 19.00 o\'clock. - concert "Opera vs. Victoria" - POSTPONED to 06/05/2023 at 19.00 o\'clock.'
   },
 
   {
     imgUrl: './images/img-dragon.jfif',
-    title: 'Events/Cancellations of Events',
-    description: '04/11/2023 at 19.00 o\'clock. - concert "Opera vs. Operetta" - POSTPONED to 06/05/2023 at 19.00 o\'clock.'
+    title: 'Events/Cancellations',
+    description: '04/11/2023 at 16.00 o\'clock. - concert "Opera vs. Operetta" - POSTPONED to 06/05/2023 at 19.00 o\'clock.'
   },
 
   {
     imgUrl: './images/img-library.jfif',
-    title: 'Cancellations/Postponements of Events',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum rerum facere doloribus culpa mollitia veniam'
+    title: 'Lost Verdi/library',
+    description: 'Lost Verdi manuscript discovered in an old library vault, set to debut in a special opera house performance next season.'
+  },
+
+  {
+    imgUrl: './images/female-pink.avif',
+    title: 'Evening/La Scala',
+    description: 'Acclaimed soprano collapses during performance, shocking audience at La Scala, but recovers quickly for triumphant encore.'
+  },
+
+  {
+    imgUrl: './images/female.jpg',
+    title: 'Performance/Opera',
+    description: 'Renowned tenor retires, delivering emotional farewell at final performance, leaving opera world in awe.'
+  },
+
+  {
+    imgUrl: './images/male-tabel.jpg',
+    title: 'tradition vs. innovation',
+    description: 'Opera house announces groundbreaking libretto for new production, sparking debate over tradition vs. innovation.'
   }
 ]
 
@@ -41,6 +59,7 @@ function updateCard() {
 
 updateCard();
 
+// Second Card
 let imgElem2 = document.querySelector('#imgElem2'),
   titleElem2 = document.querySelector('#titleElem2'),
   descriptionElem2 = document.querySelector('#descriptionElem2');
