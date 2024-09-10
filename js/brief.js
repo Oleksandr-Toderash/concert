@@ -26,9 +26,8 @@ function createBrief(dateDay, dateMonth, title) {
   cardsContainer.append(announcesBox);
 }
 
-createBrief(3, 'June', '«CENTURY named after SINATRA»');
-createBrief(3, 'June', '«CENTURY named after SINATRA»');
-createBrief(3, 'June', '«CENTURY named after SINATRA»');
-createBrief(3, 'June', '«CENTURY named after SINATRA»');
-createBrief(3, 'June', '«CENTURY named after SINATRA»');
-
+createBrief(30, 'June', '«Opera VS Operetta»');
+createBrief(3, 'June', '«Antonio Vivaldi. Season»');
+createBrief(11, 'December', '«Events/Cancellations»');
+createBrief(10, 'December', '«Performance/Opera»');
+createBrief(20, 'November', '«Tradition vs. innovation»');
