@@ -31,7 +31,7 @@ const newsCards = [
 
   {
     imgUrl: './images/male-tabel.jpg',
-    title: 'tradition vs. innovation',
+    title: 'Tradition vs. innovation',
     description: 'Opera house announces groundbreaking libretto for new production, sparking debate over tradition vs. innovation.'
   }
 ]
