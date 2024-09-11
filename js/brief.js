@@ -1,33 +1,47 @@
-function createBrief(dateDay, dateMonth, title) {
-  const announcesBox = document.createElement('div')
-  announcesBox.classList.add('anonsesBox');
+class Brief {
+  constructor(dateDay, dateMonth, title) {
+    this.dateDay = dateDay;
+    this.dateMonth = dateMonth;
+    this.title = title;
+  }
 
-  const announcesDate = document.createElement('div');
-  announcesDate.classList.add('anonsesDate');
+  createBrief() {
+    const announcesBox = document.createElement('div');
+    announcesBox.classList.add('anonsesBox');
 
-  const day = document.createElement('p');
-  const month = document.createElement('p');
-  day.textContent = dateDay;
-  month.textContent = dateMonth;
+    const announcesDate = document.createElement('div');
+    announcesDate.classList.add('anonsesDate');
 
-  announcesDate.append(day);
-  announcesDate.append(month);
+    const day = document.createElement('p');
+    const month = document.createElement('p');
+    day.textContent = this.dateDay;
+    month.textContent = this.dateMonth;
 
-  const titleBox = document.createElement('div');
-  const titleText = document.createElement('p');
-  titleText.textContent = title;
+    announcesDate.append(day);
+    announcesDate.append(month);
 
-  titleBox.append(titleText);
+    const titleBox = document.createElement('div');
+    const titleText = document.createElement('p');
+    titleText.textContent = this.title;
 
-  announcesBox.append(announcesDate);
-  announcesBox.append(titleBox);
+    titleBox.append(titleText);
 
-  const cardsContainer = document.querySelector('#brief-container');
-  cardsContainer.append(announcesBox);
+    announcesBox.append(announcesDate);
+    announcesBox.append(titleBox);
+
+    const cardsCantainer = document.querySelector('#brief-container');
+    cardsCantainer.append(announcesBox);
+  }
 }
 
-createBrief(30, 'June', '«Opera VS Operetta»');
-createBrief(3, 'June', '«Antonio Vivaldi. Season»');
-createBrief(11, 'December', '«Events/Cancellations»');
-createBrief(10, 'December', '«Performance/Opera»');
-createBrief(20, 'November', '«Tradition vs. innovation»');
+const brief1 = new Brief(30, 'June', '«Opera VS Operetta»');
+const brief2 = new Brief(3, 'June', '«Antonio Vivaldi. Season»');
+const brief3 = new Brief(11, 'December', '«Events/Cancellations»');
+const brief4 = new Brief(10, 'December', '«Performance/Opera»');
+const brief5 = new Brief(20, 'November', '«Tradition vs. innovation»');
+
+brief1.createBrief();
+brief2.createBrief();
+brief3.createBrief();
+brief4.createBrief();
+brief5.createBrief();
