@@ -37,8 +37,10 @@ class ViewButtons {
   }
 }
 
-const viewButton1 = new ViewButtons('./images/img-opera-seats.jfif', 'Opera VS Operetta');
-const viewButton2 = new ViewButtons('./images/img-opera-seats.jfif', 'Opera VS Operetta')
+const viewButton1 = new ViewButtons('./images/img-opera-scene-blue.jfif', '«Performance/Opera»');
+const viewButton2 = new ViewButtons('./images/img-opera-seats-view.jpg', '«Opera Seating»');
+const viewButton3 = new ViewButtons('./images/img-opera-event.jpg', '«Opera Events»');
 
 viewButton1.createViewBtn();
 viewButton2.createViewBtn();
+viewButton3.createViewBtn();
