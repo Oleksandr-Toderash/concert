@@ -52,10 +52,9 @@
 
   .sectionOperaBlock {
     width: 1150px;
+    display: flex;
   }
   .bannerOpera img {
     width: 100%;
   }
-
-
 }

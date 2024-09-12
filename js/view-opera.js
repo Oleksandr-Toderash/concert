@@ -11,3 +11,34 @@ export function changePhotos() {
   });
 }
 
+// clone button card
+class ViewButtons {
+  constructor(imgUrl, text) {
+    this.imgUrl = imgUrl;
+    this.text = text;
+  }
+
+  createViewBtn() {
+    const buttonBox = document.createElement('div');
+    buttonBox.classList.add('sectionOperaCard');
+    buttonBox.id = 'view-button';
+
+    let img = document.createElement('img');
+    img.src = this.imgUrl;
+
+    const paragraph = document.createElement('p');
+    paragraph.textContent = this.text;
+
+    buttonBox.append(img);
+    buttonBox.append(paragraph);
+
+    const viewBtnsContainer = document.querySelector('#viewBtnsContainer');
+    viewBtnsContainer.append(buttonBox);
+  }
+}
+
+const viewButton1 = new ViewButtons('./images/img-opera-seats.jfif', 'Opera VS Operetta');
+const viewButton2 = new ViewButtons('./images/img-opera-seats.jfif', 'Opera VS Operetta')
+
+viewButton1.createViewBtn();
+viewButton2.createViewBtn();
