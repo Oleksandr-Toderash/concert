@@ -221,6 +221,12 @@
   height: 30px;
 }
 
+.extra-cards-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .extra-cards {
   display: none;
 }
