@@ -53,8 +53,40 @@
   .sectionOperaBlock {
     width: 1150px;
     display: flex;
+    gap: 10px;
   }
   .bannerOpera img {
     width: 100%;
+  }
+  #img-scene-1 {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .sectionOperaBlock {
+    width: 100%;
+  }
+  .sectionOperaCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1188px) {
+  .sectionOperaBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+}
+@media (max-width: 935px) {
+  .sectionOperaBlock {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0px;
+  }
+}
+@media (max-width: 682px) {
+  .sectionOperaBlock {
+    display: none;
   }
 }

@@ -217,3 +217,10 @@
     align-items: center;
   }
 }
+@media (max-width: 586px) {
+  .calendar {display: none;}
+  .minipage {
+    height: 100%;
+  }
+}
+

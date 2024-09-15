@@ -129,7 +129,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 470px;
+  /* width: 480px; */
 }
 
 .contentCardBox {
@@ -181,8 +181,17 @@
   }
 
   .CardDate div:first-child {
-    font-size: 50px;
-    
+    font-size: 2.2rem;
+  }
+  .CardDate {
+    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .CardInfoText p:first-child {
+    font-size: 1.5rem;
+    line-height: 44.8px;
   }
 
   .CardFirstBox {
@@ -191,17 +200,26 @@
     align-items: flex-start;
   }
 
-  .CardFirstBox img {
-    width: fit-content;
-  }
-
   .CardImg {
     object-fit: cover;
     width: max-content;
   }
+  .CardImg img {
+    width: 270px;
+    height: 190px;
+  }
 
   .CardAllInfo {
-    width: 400px;
+    width: 270px;
+  }
+
+  .Card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding: 22px;
+    
   }
 }
 
