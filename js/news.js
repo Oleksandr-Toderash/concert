@@ -13,7 +13,7 @@ const newsCards = [
 
   {
     imgUrl: './images/img-library.jfif',
-    title: 'Lost Verdi/library',
+    title: 'Verdi/library',
     description: 'Lolo Verdi manuscript discovered in an old library vault, set to debut in a special opera house performance next season.'
   },
 
