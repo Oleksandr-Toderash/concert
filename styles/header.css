@@ -104,3 +104,30 @@ nav a:hover {
     justify-content: center;
   }
 }
+
+@media (max-width: 500px) {
+  .headerTools .headerMainSquare {
+    width: 5px;
+    height: 5px;
+  }
+  nav {
+    gap: 7px;
+  }
+}
+
+@media (max-width: 443px) {
+  .headerTools {
+    /* display: grid; */
+    /* grid-template-columns: 58px 100px 60px; */
+    font-size: 0.9rem;
+  }
+  .headerTools .headerMainSquare {
+    width: 3px;
+    height: 3px;
+  }
+  nav {
+    gap: 5px;
+  }
+}
+
+
