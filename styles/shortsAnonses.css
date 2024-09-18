@@ -39,6 +39,7 @@
 }
 .anonsesBox:hover {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  cursor: pointer;
 }
 .anonsesDate {
   display: flex;
@@ -124,3 +125,61 @@
   }
 }
 
+
+/* anounces modal */
+
+.anounce-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 85%;
+}
+
+.anounce-modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.modal-section {
+  padding: 10px 15px;
+}
+
+.modal-header .title {
+  font-size: 1.20rem;
+  font-weight: bold;
+}
+.modal-header .btn-close {
+  cursor: pointer;
+  border: none;
+  font-size: 1.20rem;
+  width: 20px;
+  height: 20px;
+}
+
+.overlay {
+  position: fixed;
+  transition: 200ms ease-in-out;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  pointer-events: none;
+}
+.overlay.active {
+  opacity: 0.4;
+  pointer-events: all;
+}

@@ -31,17 +31,52 @@ class Brief {
 
     const cardsCantainer = document.querySelector('#brief-container');
     cardsCantainer.append(announcesBox);
+
+    return announcesBox
   }
 }
 
-const brief1 = new Brief(30, 'June', '«Opera VS Operetta»');
-const brief2 = new Brief(3, 'June', '«Antonio Vivaldi. Season»');
-const brief3 = new Brief(11, 'December', '«Events/Cancellations»');
-const brief4 = new Brief(10, 'December', '«Performance/Opera»');
-const brief5 = new Brief(20, 'November', '«Tradition vs. innovation»');
 
-brief1.createBrief();
-brief2.createBrief();
-brief3.createBrief();
-brief4.createBrief();
-brief5.createBrief();
+const briefElement = document.querySelector('.anonsesBox');
+const briefs = [
+  new Brief(30, 'June', '«Opera VS Operetta»'),
+  new Brief(3, 'June', '«Antonio Vivaldi. Season»'),
+  new Brief(11, 'December', '«Events/Cancellations»'),
+  new Brief(10, 'December', '«Performance/Opera»'),
+  new Brief(20, 'November', '«Tradition vs. innovation»')
+];
+
+const openModalBtns = briefs.map(brief => brief.createBrief());
+
+// anounces model
+
+if (briefElement) {
+  openModalBtns.push(briefElement);
+}
+
+const closeBtn = document.querySelector('#closeBtn');
+const overlay = document.querySelector('#overlay');
+
+openModalBtns.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector('#modal');
+    openModal(modal)
+  });
+})
+
+closeBtn.addEventListener('click', () => {
+  closeModal(modal);
+})
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
+}
+
