@@ -215,12 +215,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 720px;
   }
 }
 @media (max-width: 586px) {
   .calendar {display: none;}
   .minipage {
-    height: 100%;
+    height: 800%;
+  }
+  .minipageBox {
+    margin-bottom: 50px;
   }
 }
 

@@ -41,7 +41,7 @@ class Brief {
 }
 
 const briefs = [
-  new Brief(30, 'June', '«Opera VS Operetta»', '/images/female-pink.avif', 'St. Petersburg Chamber Orchestra of the Olympic Orchestra.'),
+  new Brief(30, 'June', '«Opera VS Operetta»', '/images/female-pink.avif', 'A soprano\'s voice soars with passion and grace, captivating the audience with haunting arias that stir deep emotions.'),
   new Brief(13, 'June', '«Antonio Vivaldi. Season»', './images/male-tabel.jpg', 'Tribute to Frank Sinatra.'),
   new Brief(11, 'December', '«Events/Cancellations»', './images/img-opera-scene-red.jfif', 'A small town meets mysterious visitors from space.'),
   new Brief(10, 'December', '«Performance/Opera»', '/images/img-opera-event.jpg', 'A shy artist paints the town, discovering his courage.'),
@@ -98,5 +98,4 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
-
-
+console.log('Code is what i like');

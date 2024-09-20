@@ -116,7 +116,7 @@
           <div class="CardAllInfo">
             <div class="CardInfoText">
               <p>Opera VS Operetta</p>
-              <p>St. Petersburg Chamber Orchestra of the Olympic Orchestra.</p>
+              <p>A soprano's voice soars with passion and grace, captivating the audience with haunting arias that stir deep emotions.</p>
             </div>
             <div class="Cardinfo">
               <div>
@@ -280,8 +280,9 @@
           <div class="calendarMonth">
             <p id="month">January</p>
             <div>
-              <button id="backBtn"> < </button>
-              <button id="nextBtn"> > </button>
+              <!-- Icons -->
+              <button id="backBtn"><i class="fa-solid fa-arrow-left"></i></button>
+              <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
           </div>
           <div class="calendarDate">
@@ -354,20 +355,19 @@
         </div>
       </div>
       <div class="anounce-modal" id="modal">
-        <div id="closeBtn">X</div>
-        <div class="modal_box-img">
-          <img id="modal-img" src="" alt="#">
+        <div class="modal_header">
+          <img class="modal-img" id="modal-img" src="" alt="#">
+          <i class="fa-solid fa-xmark  cross-icon" id="closeBtn"></i>
         </div>
         <div class="modal_box-title">
           <div class="modal_box-date">
             <div id="modal-dateDay"></div>
             <div id="modal-dateMonth"></div>
           </div>
-          <div id="modal-title"></div>
+          <div id="modal-title" class="modal-title"></div>
         </div>
-        <div id="modal-description"></div>
+        <div id="modal-description" class="modal_description"></div>
       </div>
-
       <div id="overlay" class="overlay"></div>
     </section>
   </main>
