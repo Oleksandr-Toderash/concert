@@ -93,7 +93,7 @@
               </div>
             </div>
           </div>
-          <button>
+          <button id="orderTicketsBtn">
             Order tickets
           </button>
         </div>
@@ -129,7 +129,7 @@
               </div>
             </div>
           </div>
-          <button>
+          <button id="orderTicketsBtn">
             Order tickets
           </button>
         </div>
@@ -165,7 +165,7 @@
                   </div>
                 </div>
               </div>
-              <button>
+              <button id="orderTicketsBtn">
                 Order tickets
               </button>
             </div>
@@ -199,7 +199,7 @@
                   </div>
                 </div>
               </div>
-              <button>
+              <button id="orderTicketsBtn">
                 Order tickets
               </button>
             </div>
@@ -233,12 +233,41 @@
                   </div>
                 </div>
               </div>
-              <button>
+              <button id="orderTicketsBtn">
                 Order tickets
               </button>
             </div>
           </div>
         </div>
+        <div id="tickets-popup" class="tickets-popup">
+          <div class="tickets-popup_header">
+            <i id="tickets-cross-icon" class="fa-solid fa-xmark"></i>
+            <div class="tickets-popup_date">
+              <p class="tickets-popup_dateDay"></p>
+              <p class="tickets-popup_dateMonth"></p>
+            </div>
+            <div class="tickets-popup_name"></div>
+          </div>
+          <div class="tickets-popup_content">
+            <div class="tickets-popup_card-name-box">
+              <p>Card holder name</p>
+              <input type="text" placeholder="Enter your full name">
+            </div>
+            <div class="tickets-popup_card-number-box">
+              <p>Card number</p>
+              <input type="text" placeholder="Enter your card number">
+            </div>
+            <div class="tickets-popup_card-moreInf-box">
+              <p>Expiry Date / CVV</p>
+              <div class="tickets-popup_card-input-box">
+                <input type="date" placeholder="Enter your expiry date">
+                <input type="text" placeholder="CVV">
+              </div>
+            </div>
+            <button>Checkout</button>
+          </div>
+        </div>
+        <div id="ticketsPopupOverlay" class="tickets-popup-overlay"></div>
       </div>
       <div class="btn-more-container">
         <button id="btnMore" class="btn-more">more</button>

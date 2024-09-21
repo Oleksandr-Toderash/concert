@@ -249,3 +249,23 @@
 .extra-cards {
   display: none;
 }
+
+.tickets-popup {
+  display: none;
+  z-index: 11;
+  background: white;
+}
+.tickets-popup.active {
+  display: block;
+}
+
+.tickets-popup-overlay.active{
+  display: block;
+  background: #05cdab;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
