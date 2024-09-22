@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/concert-logo.png" type="image/png">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/viewOpera.css">
@@ -241,7 +242,6 @@
         </div>
         <div id="tickets-popup" class="tickets-popup">
           <div class="tickets-popup_header">
-            <i id="tickets-cross-icon" class="fa-solid fa-xmark"></i>
             <div class="tickets-popup_date">
               <p class="tickets-popup_dateDay"></p>
               <p class="tickets-popup_dateMonth"></p>
@@ -249,23 +249,26 @@
             <div class="tickets-popup_name"></div>
           </div>
           <div class="tickets-popup_content">
-            <div class="tickets-popup_card-name-box">
+            <div class="tickets-popup_card-name-box tickets-popup-card-title">
               <p>Card holder name</p>
               <input type="text" placeholder="Enter your full name">
             </div>
-            <div class="tickets-popup_card-number-box">
+            <div class="tickets-popup_card-number-box tickets-popup-card-title">
               <p>Card number</p>
               <input type="text" placeholder="Enter your card number">
             </div>
-            <div class="tickets-popup_card-moreInf-box">
+            <div class="tickets-popup_card-moreInf-box tickets-popup-card-title">
               <p>Expiry Date / CVV</p>
               <div class="tickets-popup_card-input-box">
-                <input type="date" placeholder="Enter your expiry date">
-                <input type="text" placeholder="CVV">
+                <input class="first-inp-tickets-popup" type="text" placeholder="Enter your expiry date">
+                <input class="second-inp-tickets-popup" type="text" placeholder="CVV">
               </div>
             </div>
             <button>Checkout</button>
           </div>
+        </div>
+        <div class="cross-close-btn-box">
+          <i id="tickets-cross-icon" class="fa-solid fa-xmark cross-btn-icon"></i>
         </div>
         <div id="ticketsPopupOverlay" class="tickets-popup-overlay"></div>
       </div>
