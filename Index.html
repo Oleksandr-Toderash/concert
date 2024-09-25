@@ -249,22 +249,24 @@
             <div class="tickets-popup_name"></div>
           </div>
           <div class="tickets-popup_content">
-            <div class="tickets-popup_card-name-box tickets-popup-card-title">
-              <p>Card holder name</p>
-              <input type="text" placeholder="Enter your full name">
-            </div>
-            <div class="tickets-popup_card-number-box tickets-popup-card-title">
-              <p>Card number</p>
-              <input type="text" placeholder="Enter your card number">
-            </div>
-            <div class="tickets-popup_card-moreInf-box tickets-popup-card-title">
-              <p>Expiry Date / CVV</p>
-              <div class="tickets-popup_card-input-box">
-                <input class="first-inp-tickets-popup" type="text" placeholder="Enter your expiry date">
-                <input class="second-inp-tickets-popup" type="text" placeholder="CVV">
+            <form>
+              <div class="tickets-popup_card-name-box tickets-popup-card-title">
+                <p>Card holder name</p>
+                <input type="text" placeholder="Enter your full name">
               </div>
-            </div>
-            <button>Checkout</button>
+              <div class="tickets-popup_card-number-box tickets-popup-card-title">
+                <p>Card number</p>
+                <input type="text" placeholder="Enter your card number">
+              </div>
+              <div class="tickets-popup_card-moreInf-box tickets-popup-card-title">
+                <p>Expiry Date / CVV</p>
+                <div class="tickets-popup_card-input-box">
+                  <input class="first-inp-tickets-popup" type="text" placeholder="Enter your expiry date">
+                  <input class="second-inp-tickets-popup" type="text" placeholder="CVV">
+                </div>
+              </div>
+              <button id="popupCheckoutBtn" type="button">Checkout</button>
+            </form>
           </div>
         </div>
         <div class="cross-close-btn-box">
@@ -275,6 +277,25 @@
       <div class="btn-more-container">
         <button id="btnMore" class="btn-more">more</button>
       </div>
+
+      <!-- Window order a ticket -->
+      <div class="window-result-btn">
+        <div class="window-order-ticket">
+          <div class="window-card-box">
+            <div class="window-order_header">
+              <p>Success !</p>
+            </div>
+            <div class="window-order_logobox-parent">
+              <i class="fa-regular fa-circle-check window-order_logobox"></i>
+            </div>
+            <div class="window-order_section">
+              <p id="windowDescrpText" class="window-order-section_text">You've got your seat secured</p>
+            </div>
+          </div>
+          <button id="windowButton" class="window-button">CLOSE</button>
+        </div>
+      </div>
+      <div class="window-overlay"></div>
     </section>
     <section class="newsCalendar restrictions2">
       <div class="newsContent">
@@ -312,7 +333,6 @@
           <div class="calendarMonth">
             <p id="month">January</p>
             <div>
-              <!-- Icons -->
               <button id="backBtn"><i class="fa-solid fa-arrow-left"></i></button>
               <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
