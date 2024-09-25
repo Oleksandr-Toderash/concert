@@ -383,14 +383,12 @@
   width: fit-content;
   height: 300px;
   position: fixed;
-  /* bottom: -153px;
-  left: 230px; */
-  bottom: -300px;
-  left: -300px;
+  bottom: -500px;
+  left: 230px;
   transform: translate(-50%, -50%) scale(1);
   z-index: 2;
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 0.1s;
 }
 
 .window-card-box {

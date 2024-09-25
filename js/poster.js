@@ -53,8 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflowY = 'scroll';
   }
 
-  // You should add a localStorage here, because when you reload the page, it removes
-
   orderTicketsBtn.forEach(button => {
     button.addEventListener('click', () => {
       openTicketsPopup(event);
@@ -67,4 +65,91 @@ document.addEventListener('DOMContentLoaded', function () {
     showScrollbar();
   });
 
+  const popFunc = openInputPopup();
+
+  document.querySelector('#popupCheckoutBtn').addEventListener('click', () => {
+    const inputs = document.querySelectorAll('.tickets-popup-card-title input')
+    let allFilled = true;
+
+    inputs.forEach(input => {
+      if (input.value === '') {
+        allFilled = false;
+        input.setAttribute('style', 'border: 1px solid red')
+      }
+    })
+
+    if (allFilled) {
+      setTimeout(() => {
+        popFunc.startAnimation();
+      }, 100);
+      closeTicketsPopup()
+      showScrollbar();
+      inputs.forEach(input => {
+        input.value = '';
+      })
+    }
+  })
+
+  function openInputPopup() {
+    const CardContainer = document.querySelector('.window-order-ticket');
+    CardContainer.style.display = 'block';
+
+    let bottomPosition = -300;
+    let opacity = 0;
+    const targetBottom = -153;
+    const targetOpacity = 1;
+
+    const animationSpeed = 2;
+
+    function startAnimation() {
+      function step() {
+        if (bottomPosition < targetBottom) bottomPosition += 2;
+        if (opacity < targetOpacity) opacity += 0.2;
+
+        CardContainer.style.bottom = bottomPosition + 'px';
+        CardContainer.style.opacity = opacity;
+
+        if (bottomPosition < targetBottom || opacity < targetOpacity) {
+          requestAnimationFrame(step);
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    function resetAnimation() {
+      let reverseBottomPosition = targetBottom;
+      let reverceOpacity = targetOpacity;
+
+      function step() {
+        if (reverseBottomPosition > -400) reverseBottomPosition -= 8;
+        if (reverceOpacity > 0) reverceOpacity -= 0.1;
+
+        CardContainer.style.bottom = reverseBottomPosition + 'px';
+        CardContainer.style.opacity = reverceOpacity;
+
+        if (reverseBottomPosition > -300 || reverceOpacity > 0) {
+          requestAnimationFrame(step);
+        }
+      }
+      requestAnimationFrame(step)
+    }
+
+    // function openWindowCard() {
+    //   setTimeout(startAnimation, 100);
+    // }
+
+    // openWindowCard();
+
+
+    return {
+      startAnimation,
+      resetAnimation
+    }
+  }
+
+
+
+  document.querySelector('#windowButton').addEventListener('click', () => {
+    setTimeout(popFunc.resetAnimation, 100);
+  })
 })
