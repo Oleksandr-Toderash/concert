@@ -366,18 +366,6 @@
 
 /* new window btn result */
 
-/* .window-overlay {
-  position: fixed;
-  background-color: rgb(0, 0, 0);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-} */
-
-/* active propertie */
-
 .window-order-ticket {
   display: none;
   width: fit-content;
@@ -464,3 +452,46 @@
   color: rgb(0, 174, 255);
   box-shadow: rgba(0, 0, 0, 0.208) 0px 8px 4px 0px inset;
 }
+
+@media (max-width: 586px) {
+  .window-order-ticket {
+    left: 130px;
+  }
+  .window-card-box {
+    width: 250px;
+}
+  .window-order_logobox-parent {
+    right: 15%;
+  }
+
+  .window-order-section_text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 732px) {
+  .tickets-popup {
+    width: auto;
+    top: 50%;
+    left: 50%;
+  }
+}
+@media (max-width: 590px) {
+  .tickets-popup {
+    width: 300px;
+  }
+  
+  .tickets-popup_name {
+    font-size: 1rem;
+  }
+
+  .tickets-popup_header {
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
