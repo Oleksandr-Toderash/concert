@@ -41,10 +41,10 @@ class Brief {
 }
 
 const briefs = [
-  new Brief(30, 'June', '«Opera VS Operetta»', '/images/female-pink.avif', 'A soprano\'s voice soars with passion and grace, captivating the audience with haunting arias that stir deep emotions.'),
+  new Brief(30, 'June', '«Opera VS Operetta»', './images/female-pink.avif', 'A soprano\'s voice soars with passion and grace, captivating the audience with haunting arias that stir deep emotions.'),
   new Brief(13, 'June', '«Antonio Vivaldi. Season»', './images/male-tabel.jpg', 'Tribute to Frank Sinatra.'),
   new Brief(11, 'December', '«Events/Cancellations»', './images/img-opera-scene-red.jfif', 'A small town meets mysterious visitors from space.'),
-  new Brief(10, 'December', '«Performance/Opera»', '/images/img-opera-event.jpg', 'A shy artist paints the town, discovering his courage.'),
+  new Brief(10, 'December', '«Performance/Opera»', './images/img-opera-event.jpg', 'A shy artist paints the town, discovering his courage.'),
   new Brief(20, 'November', '«Tradition vs. innovation»', './images/img-opera-scene-blue.jfif', 'He races to stop the machines and save humanity.')
 ];
 
@@ -55,7 +55,7 @@ const briefElement = document.querySelector('.anonsesBox');
 if (briefElement) {
   openModalBtns.push(briefElement);
 
-  briefElement.briefData = new Brief(3, 'June', '«CENTURY named after SINATRA»', '/images/female-pink.avif', 'Tribute to Frank Sinatra.')
+  briefElement.briefData = new Brief(3, 'June', '«CENTURY named after SINATRA»', './images/female-pink.avif', 'Tribute to Frank Sinatra.')
 }
 
 // anounces model
