@@ -1,0 +1,90 @@
+footer {
+  background-color: black;
+  height: 386px;
+  padding: 60px 0px 36px 0px;
+  color: white;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.footerBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 780px;
+  gap: 24px;
+}
+
+.footerBox div {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerBox .footerTitelBox {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 0.7px;
+}
+
+.footerLogo {
+    font-family: "EB Garamond", serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    min-width: 280px;
+    margin: 0px 50px 0px 0px;
+    line-height: 19px;
+}
+
+.footerBox div:first-child div {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.footerBox div {
+  font-size: 16px;
+  font-weight: 400px;
+  font-family: "Fira Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (max-width: 970px) {
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .footerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (max-width: 703px) {
+  .footerBox {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .footerLogo {
+    width: fit-content;
+    margin: 0px;
+  }
+
+  footer {
+    height: 550px;
+  }
+}

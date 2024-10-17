@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-color: #ededed;
+}
+
+.restrictions1 {
+  max-width: 1300px;
+  padding: 0px 30px;
+  margin: auto;
+}
+
+.restrictions2 {
+  max-width: 1330px;
+  padding: 0px 30px;
+  margin: auto;
+}
+
