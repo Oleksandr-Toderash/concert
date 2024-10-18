@@ -42,7 +42,7 @@ changePhotos();
 
 // uprated cards
 updateCard();
-updateCard2();
+updateCard2()
 
 //Button textContent
 BtntxtContent();
