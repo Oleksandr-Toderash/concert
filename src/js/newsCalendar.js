@@ -5,7 +5,7 @@ let currentIndex = 0;
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-function updateMonth() {
+export function updateMonth() {
   monthElem.textContent = months[currentIndex];
   if (currentIndex > months.length - 2) {
     currentIndex = months.length - 2;

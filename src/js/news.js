@@ -1,4 +1,4 @@
-const newsCards = [
+export const newsCards = [
   {
     imgUrl: './images/img-people.jfif',
     title: 'Postponements/Cancellations of Events',
@@ -42,7 +42,7 @@ let imgElem = document.querySelector('#imgElem'),
   descriptionElem = document.querySelector('#descriptionElem');
 
 let idx = 0;
-function updateCard() {
+export function updateCard() {
   let { imgUrl, title, description } = newsCards[idx];
   imgElem.src = imgUrl;
   titleElem.textContent = title;
@@ -57,15 +57,13 @@ function updateCard() {
   }, 3000)
 }
 
-updateCard();
-
 // Second Card
 let imgElem2 = document.querySelector('#imgElem2'),
   titleElem2 = document.querySelector('#titleElem2'),
   descriptionElem2 = document.querySelector('#descriptionElem2');
 
 let idx2 = newsCards.length - 1;
-function updateCard2() {
+export function updateCard2() {
   let { imgUrl, title, description } = newsCards[idx2];
   imgElem2.src = imgUrl;
   titleElem2.textContent = title;
@@ -79,5 +77,3 @@ function updateCard2() {
     updateCard2();
   }, 3000)
 }
-
-updateCard2();

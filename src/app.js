@@ -21,3 +21,30 @@ import "./assets/images/img-people.jfif";
 import "./assets/images/male-tabel.jpg";
 
 // scripts
+import "./js/navbar.js";
+import { changePhotos, ViewButtons } from "./js/view-opera.js";
+import { updateCard, updateCard2 } from "./js/news.js";
+import { BtntxtContent } from "./js/poster.js";
+import { updateMonth } from "./js/newsCalendar.js";
+import { Brief } from "./js/brief.js";
+
+
+// ViewButton
+const viewButton1 = new ViewButtons('./images/img-opera-scene-blue.jfif', '«Performance/Opera»');
+const viewButton2 = new ViewButtons('./images/img-opera-seats-view.jpg', '«Opera Seating»');
+const viewButton3 = new ViewButtons('./images/img-opera-event.jpg', '«Opera Events»');
+
+viewButton1.createViewBtn();
+viewButton2.createViewBtn();
+viewButton3.createViewBtn();
+
+changePhotos();
+
+// uprated cards
+updateCard();
+updateCard2();
+
+//Button textContent
+BtntxtContent();
+
+

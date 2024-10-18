@@ -12,7 +12,7 @@ export function changePhotos() {
 }
 
 // clone button card
-class ViewButtons {
+export class ViewButtons {
   constructor(imgUrl, text) {
     this.imgUrl = imgUrl;
     this.text = text;
@@ -35,12 +35,4 @@ class ViewButtons {
     const viewBtnsContainer = document.querySelector('#viewBtnsContainer');
     viewBtnsContainer.append(buttonBox);
   }
-}
-
-const viewButton1 = new ViewButtons('./images/img-opera-scene-blue.jfif', '«Performance/Opera»');
-const viewButton2 = new ViewButtons('./images/img-opera-seats-view.jpg', '«Opera Seating»');
-const viewButton3 = new ViewButtons('./images/img-opera-event.jpg', '«Opera Events»');
-
-viewButton1.createViewBtn();
-viewButton2.createViewBtn();
-viewButton3.createViewBtn();
+};

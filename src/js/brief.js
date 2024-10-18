@@ -1,4 +1,4 @@
-class Brief {
+export class Brief {
   constructor(dateDay, dateMonth, title, imgUrl, description) {
     this.dateDay = dateDay;
     this.dateMonth = dateMonth;
@@ -57,7 +57,6 @@ if (briefElement) {
 
   briefElement.briefData = new Brief(3, 'June', '«CENTURY named after SINATRA»', './images/female-pink.avif', 'Tribute to Frank Sinatra.')
 }
-
 // anounces model
 
 const closeBtn = document.querySelector('#closeBtn');
