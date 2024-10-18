@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: './src/app.js',
   output: {
     filename: 'main.js',
@@ -19,5 +20,14 @@ module.exports = {
         }
       }
     ]
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 9000,
+    open: true,
+    hot: true,
   }
 };
