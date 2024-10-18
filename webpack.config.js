@@ -6,6 +6,8 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: '[name][ext]',
+    assetModuleFilename: 'fonts/[name][ext]',
   },
   module: {
     rules: [
@@ -15,7 +17,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env']
+            presets: ['@babel/preset-env'],
           }
         }
       },
@@ -26,6 +28,20 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext][query]',
+        }
+      },
+      {
+        test: /\.(png|jpe?g|gif|jfif|avif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[ext]',
+            },
+          },
+        ],
       },
     ]
   },
