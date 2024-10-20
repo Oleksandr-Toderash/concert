@@ -26,7 +26,7 @@ import { changePhotos, ViewButtons } from "./js/view-opera.js";
 import { updateCard, updateCard2 } from "./js/news.js";
 import { BtntxtContent } from "./js/poster.js";
 import { updateMonth } from "./js/newsCalendar.js";
-import { Brief } from "./js/brief.js";
+import { closeModal } from "./js/brief.js";
 
 
 // ViewButton
@@ -47,4 +47,10 @@ updateCard2()
 //Button textContent
 BtntxtContent();
 
+updateMonth();
 
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeModal(modal);
+  }
+});

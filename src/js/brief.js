@@ -1,4 +1,4 @@
-export class Brief {
+class Brief {
   constructor(dateDay, dateMonth, title, imgUrl, description) {
     this.dateDay = dateDay;
     this.dateMonth = dateMonth;
@@ -57,6 +57,7 @@ if (briefElement) {
 
   briefElement.briefData = new Brief(3, 'June', '«CENTURY named after SINATRA»', './images/female-pink.avif', 'Tribute to Frank Sinatra.')
 }
+
 // anounces model
 
 const closeBtn = document.querySelector('#closeBtn');
@@ -88,13 +89,13 @@ overlay.addEventListener('click', () => {
 
 function openModal(modal) {
   if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
+  modal.classList.add('active');
+  overlay.classList.add('active');
 }
 
-function closeModal(modal) {
+export function closeModal(modal) {
   if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
 }
-console.log('Code is what i like');
+console.log('Code is what i like')
