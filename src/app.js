@@ -40,6 +40,7 @@ viewButton3.createViewBtn();
 
 changePhotos();
 
+
 // uprated cards
 updateCard();
 updateCard2()

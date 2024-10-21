@@ -1,11 +1,14 @@
 export function changePhotos() {
   const mainImg = document.querySelector('#main-img');
   const viewButtons = document.querySelectorAll('#view-button');
+  let mainImgElem = mainImg.querySelector('img');
 
   viewButtons.forEach(btn => {
-    let mainImgElem = mainImg.querySelector('img');
+    mainImgElem.src = localStorage.getItem('showMainImg');
+
     let btnImgSrc = btn.querySelectorAll('img')[0].src;
     btn.addEventListener('click', () => {
+      localStorage.setItem("showMainImg", btnImgSrc);
       mainImgElem.src = btnImgSrc;
     });
   });
