@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "start.dev": "webpack serve --open --config webpack.dev.js",
+    "build:dev": "webpack --config webpack.dev.js",
     "start.prod": "webpack serve --open --config webpack.prod.js",
-    "build": "webpack --config webpack.prod.js",
-    "build:dev": "webpack --config webpack.dev.js"
+    "build.prod": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
