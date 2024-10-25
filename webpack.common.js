@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -53,6 +54,25 @@ module.exports = {
       inject: 'body',
     }),
   ],
+  performance: {
+    maxAssetSize: 500000,
+    maxEntrypointSize: 500000,
+  },
+  optimization: {
+    minimizer: [
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminGenerate,
+          options: {
+            plugins: [
+              ['mozjpeg', { quality: 70 }],
+              ['pngquant', { quality: [0.6, 0.8] }],
+            ],
+          },
+        },
+      }),
+    ],
+  },
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
